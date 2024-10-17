@@ -1,0 +1,64 @@
+# Build Folders
+bin/
+obj/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# VS Code specific
+.vscode/
+.vscode/*
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.log
+*.tlog
+*.idb
+*.pdb
+*.cache
+*.ilk
+*.sdf
+*.opensdf
+*.opendb
+*.obj
+*.exe
+*.dll
+
+# NuGet
+*.nupkg
+*.nuget/
+packages/
+
+# Rider
+.idea/
+*.sln.iml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# JetBrains Rider
+.idea/
+
+# Visual Studio
+.vs/
+
+# Mac specific files
+.DS_Store
