@@ -116,7 +116,15 @@ watch.Restart();
 var randomList = new List<int>();
 Parallel.For(0, countTarget, i =>
 {
-    randomList.Add(random.Next(100, 1000)); // Not thread-safe
+    try
+    {
+        randomList.Add(random.Next(100, 1000)); // Not thread-safe
+    }
+    catch (Exception)
+    {
+        Console.WriteLine("Failed with exception");
+    }
+    
 });
 watch.Stop();
 Console.WriteLine($"Random List count (not thread-safe): {randomList.Count}, Elapsed time: {watch.ElapsedMilliseconds} ms");
